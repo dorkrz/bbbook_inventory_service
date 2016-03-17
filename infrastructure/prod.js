@@ -35,3 +35,5 @@ var prod= { name: 'bbbook-inventory',
     formation: [ { process: 'web', quantity: 1, size: 'Free' } ],
     log_drains: [],
     domains: [ 'bbbook-inventory.herokuapp.com' ] }
+
+configurator(prod)
