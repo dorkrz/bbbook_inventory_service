@@ -1,0 +1,24 @@
+{
+  "name": "book_inventory_microservice",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "mocha",
+    "lint": "jshint --exclude=node_modules/** **.js",
+    "test:xunit": "npm run test -- --reporter xunit"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "1.15.0",
+    "express": "4.13.4",
+    "lodash": "^4.6.1",
+    "mongodb": "^2.1.7"
+  },
+  "devDependencies": {
+    "mocha": "2.4.5",
+    "supertest": "1.2.0"
+  }
+}
