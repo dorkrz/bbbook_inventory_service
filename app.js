@@ -9,6 +9,8 @@ module.exports = function(stockRepository) {
     app.use(middleware.logIncoming);
     app.use(bodyParser.json());
 
+
+    app.get('/', (req,res,next) => {res.send('Hello ES6')});
     app.post('/stock', routes.stockUp);
     app.get('/stock/:isbn', routes.getCount);
     app.get('/stock', routes.findAll);
