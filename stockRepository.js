@@ -28,16 +28,8 @@ module.exports = {
                 limit(1).
                 next().
                 then(function (result) {
-                    if (result!==null) {
-                        res.format({
-                            html: function(){
-                                res.send('<div class="copiesLeft">'+result+'</div>')
-                            },
-                            json: function(){
-                                res.status(200).json({count: result})
-                            }
-                        })
-
+                    if (result) {
+                        return result.count;
                     }
                     return null;
                 });
